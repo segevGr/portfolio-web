@@ -65,7 +65,7 @@ const Hero = () => {
         <div className="flex-1 flex items-center justify-end">
           <div className="bg-lightBlue w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden flex items-center justify-center">
             <img
-              src={`${process.env.PUBLIC_URL}/Segev.PNG`}
+              src={`${process.env.PUBLIC_URL}/Segev.png`}
               alt="Segev"
               className="w-full h-full object-cover"
             />
