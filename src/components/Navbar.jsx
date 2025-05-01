@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center h-16 px-6 lg:px-16">
       <div>
         <img
-          src="/Logo.png"
+          src={`${process.env.PUBLIC_URL}/Logo.png`}
           alt="Logo"
           className="w-[120px] h-[120px] lg:h-[150px] lg:w-[150px] mt-2"
         />

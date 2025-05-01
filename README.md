@@ -7,11 +7,12 @@ Designed to showcase my professional background, skills, and achievements to pot
 
 ## 🛠️ Tech Stack
 
-- React (no Next.js / no Vite)
+- React (without Next.js or Vite)
 - TailwindCSS
 - FontAwesome Icons
-- SwiperJS (used for carousel/slider)
+- SwiperJS (for carousel/slider)
+- Custom color management via `colors.js`
 
 ---
 
-## 📁 Folder Structure (Simplified)
+Made by [Segev Grotas](https://github.com/segevGr)
