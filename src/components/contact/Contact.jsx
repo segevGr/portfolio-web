@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <SectionContainer title={contactData.title}>
+    <SectionContainer title={contactData.title} id="contact">
       <div className="w-full flex justify-center pb-10">
         {isSubmitted ? (
           <div

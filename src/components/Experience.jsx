@@ -6,6 +6,7 @@ import { experienceData } from "../data/experienceData";
 const Experience = () => {
   return (
     <SectionContainer
+      id="experience"
       title={"My Experience"}
       additionalStyle={"mt-16 md:mt-28"}
     >

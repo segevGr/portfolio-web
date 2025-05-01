@@ -19,7 +19,7 @@ const Profession = () => {
   const [activeSlide, setActiveSlide] = useState(2);
 
   return (
-    <SectionContainer title={"My Profession"}>
+    <SectionContainer id="profession" title={"My Profession"}>
       <div className="w-full max-w-6xl px-4 relative pb-12">
         <div
           style={{

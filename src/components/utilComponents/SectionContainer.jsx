@@ -1,8 +1,9 @@
 import FadeOnScroll from "./FadeOnScroll";
 
-const SectionContainer = ({ children, title, additionalStyle = "" }) => {
+const SectionContainer = ({ id, children, title, additionalStyle = "" }) => {
   return (
     <section
+      id={id}
       className={`flex flex-col items-center my-5 md:mt-20 relative ${additionalStyle}`}
     >
       <FadeOnScroll>

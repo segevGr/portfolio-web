@@ -6,7 +6,7 @@ import { layoutWidth, secondaryTitle } from "../../utils/layout";
 
 const Stack = () => {
   return (
-    <SectionContainer title={"My Stack"}>
+    <SectionContainer id="stack" title={"My Stack"}>
       <div
         className={`grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-y-5 md:gap-y-24 items-start ${layoutWidth}`}
       >

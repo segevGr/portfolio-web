@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "README.md"
+      - ".github/**"
+      - "LICENSE"
+      - "**/*.md"
 
 jobs:
   build-and-deploy:
