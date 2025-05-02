@@ -21,6 +21,15 @@ const Contact = () => {
     messageError: "",
   });
 
+  const sanitizeInput = (str) => {
+    return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  };
+
+  const containsMaliciousPatterns = (str) => {
+    const pattern = /<script|onerror|onload|javascript:|iframe|<img/gi;
+    return pattern.test(str);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -31,13 +40,21 @@ const Contact = () => {
     const hasErrors = Object.values(newErrors).some((val) => val !== "");
     if (hasErrors) return;
 
+    const inputs = [name, email, subject, message];
+
+    const malicious = inputs.some((input) => containsMaliciousPatterns(input));
+    if (malicious) {
+      alert("Input contains forbidden characters or scripts.");
+      return;
+    }
+
     setIsSending(true);
 
     const templateParams = {
-      name,
-      email,
-      title: subject,
-      message,
+      name: sanitizeInput(name),
+      email: sanitizeInput(email),
+      title: sanitizeInput(subject),
+      message: sanitizeInput(message),
     };
 
     emailjs
