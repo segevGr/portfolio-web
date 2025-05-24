@@ -1,5 +1,5 @@
 export const contactData = {
-  title: "Lets Talk",
+  title: "Lets Talk!",
   name: "Full Name",
   namePlaceHolder: "Yossi Cohen",
   email: "Email Address",

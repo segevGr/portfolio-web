@@ -4,6 +4,7 @@ import Profession from "./components/profession/Profession";
 import Stack from "./components/stack/Stack";
 import Experience from "./components/Experience";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/utilComponents/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Stack />
         <Experience />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

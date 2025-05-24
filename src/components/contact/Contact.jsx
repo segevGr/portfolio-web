@@ -78,7 +78,7 @@ const Contact = () => {
 
   return (
     <SectionContainer title={contactData.title} id="contact">
-      <div className="w-full flex justify-center pb-10">
+      <div className="w-full flex justify-center">
         {isSubmitted ? (
           <div
             className="text-center opacity-0 animate-fade-in bg-lightBlue
