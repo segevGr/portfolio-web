@@ -13,7 +13,8 @@ export const projectsList = [
     title: "Portfolio Website",
     description:
       "My personal landing page showcasing my skills and achievements.",
-    imgSrc: "https://source.unsplash.com/400x300/?developer,portfolio",
+    imgSrc:
+      "https://github.com/segevGr/portfolio-web/blob/main/public/screenshots/hero.png?raw=true",
     link: "https://segevgr.github.io/portfolio-web/",
     github: "https://github.com/segevGr/portfolio-web",
     tech: ["React", "TailwindCSS"],
