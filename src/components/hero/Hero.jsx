@@ -6,9 +6,9 @@ import "../../App.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-20 lg:px-36 py-12">
+    <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center justify-center gap-12 lg:gap-24 px-6 md:px-20 lg:px-24 py-8 lg:py-12">
       <FadeOnScroll>
-        <div className="flex-1 flex flex-col items-center lg:items-start justify-center text-center lg:text-left mt-8 lg:mt-0">
+        <div className="flex-1 flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
           <div className="flex flex-row space-x-2 mb-4">
             <h3 className="text-[18px] md:text-[20px]">{heroText.hey[0]}</h3>
             <h3 className="text-[18px] md:text-[20px] text-secondary">
@@ -62,8 +62,8 @@ const Hero = () => {
       </FadeOnScroll>
 
       <FadeOnScroll>
-        <div className="flex-1 flex items-center justify-end">
-          <div className="bg-lightBlue w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden flex items-center justify-center">
+        <div className="flex-1 flex justify-center items-center">
+          <div className="bg-lightBlue w-[280px] h-[280px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden flex items-center justify-center">
             <img
               src={`${process.env.PUBLIC_URL}/Segev.png`}
               alt="Segev"
