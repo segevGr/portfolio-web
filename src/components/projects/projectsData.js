@@ -2,7 +2,7 @@ export const projectsList = [
   {
     title: "JamLive Platform",
     description:
-      "Real-time harmony for real-life musicians — lyrics, chords, and roles in perfect sync.",
+      "Real-time harmony for real-life musicians - lyrics, chords, and roles in perfect sync.",
     imgSrc:
       "https://github.com/segevGr/JaMoveo/blob/master/screenshots/live-jam.png?raw=true",
     link: "https://jamoveo-macabi.vercel.app/login",
