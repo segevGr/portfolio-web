@@ -19,18 +19,4 @@ export const projectsList = [
     github: "https://github.com/segevGr/portfolio-web",
     tech: ["React", "TailwindCSS"],
   },
-  //   {
-  //     title: "Rescue Anxiety App",
-  //     description:
-  //       "Mobile app to help users cope with anxiety during emergencies.",
-  //     imgSrc: "https://source.unsplash.com/400x300/?mental-health",
-  //     tech: ["React Native", "Redux", "Firebase"],
-  //   },
-  //   {
-  //     title: "Rescue Anxiety App",
-  //     description:
-  //       "Mobile app to help users cope with anxiety during emergencies.",
-  //     imgSrc: "https://source.unsplash.com/400x300/?mental-health",
-  //     tech: ["React Native", "Redux", "Firebase"],
-  //   },
 ];
