@@ -30,6 +30,33 @@ const Contact = () => {
     return pattern.test(str);
   };
 
+  const handleInputChange = (field, value) => {
+    switch (field) {
+      case "name":
+        setName(value);
+        if (errorsMap.nameError)
+          setErrorsMap((prev) => ({ ...prev, nameError: "" }));
+        break;
+      case "email":
+        setEmail(value);
+        if (errorsMap.emailError)
+          setErrorsMap((prev) => ({ ...prev, emailError: "" }));
+        break;
+      case "subject":
+        setSubject(value);
+        if (errorsMap.subjectError)
+          setErrorsMap((prev) => ({ ...prev, subjectError: "" }));
+        break;
+      case "message":
+        setMessage(value);
+        if (errorsMap.messageError)
+          setErrorsMap((prev) => ({ ...prev, messageError: "" }));
+        break;
+      default:
+        break;
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -81,10 +108,10 @@ const Contact = () => {
       <div className="w-full flex justify-center">
         {isSubmitted ? (
           <div
-            className="text-center opacity-0 animate-fade-in bg-lightBlue
-            h-72 w-4/5 mx-auto md:w-1/5 rounded-2xl flex flex-col justify-center"
+            className="text-center opacity-0 animate-fade-in bg-lightBlue rounded-2xl flex flex-col justify-center
+                        w-4/5 h-72 mx-auto md:w-2/5 md:h-80 md:py-8 md:px-4"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-textPrimary mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-textPrimary mb-2 md:mb-4">
               {contactData.messageSentTitle}
             </h2>
             <p className="text-base md:text-lg text-textSecondary max-w-md mx-auto">
@@ -99,26 +126,26 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <InputContainer
                 label={contactData.name}
-                onChange={setName}
+                onChange={(value) => handleInputChange("name", value)}
                 placeholder={contactData.namePlaceHolder}
                 error={errorsMap.nameError}
               />
               <InputContainer
                 label={contactData.email}
-                onChange={setEmail}
+                onChange={(value) => handleInputChange("email", value)}
                 placeholder={contactData.emailPlaceHolder}
                 error={errorsMap.emailError}
               />
               <InputContainer
                 label={contactData.subject}
-                onChange={setSubject}
+                onChange={(value) => handleInputChange("subject", value)}
                 placeholder={contactData.subjectPlaceHolder}
                 className="md:col-span-2"
                 error={errorsMap.subjectError}
               />
               <InputContainer
                 label={contactData.message}
-                onChange={setMessage}
+                onChange={(value) => handleInputChange("message", value)}
                 placeholder={contactData.messagePlaceHolder}
                 className="md:col-span-2"
                 error={errorsMap.messageError}
